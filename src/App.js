@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.css'
+import Header from "./components/header/header";
+import iphone from './components/iphone/products (2).json'
+import categoryList from './components/category/category'
+import Product from "./components/product/product";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = (props) => {
+    const [iphones, setIphones] = useState(iphone)
+
+
+    const homeClick = () =>{
+        setIphones(iphone)
+    }
+    const categorysClick = (id, title) =>{
+
+    }
+
+
+    return (
+        <div className={'app'}>
+            <Header iphones={iphones}
+                    setIphones={setIphones}
+                    categoryList={categoryList}
+                    categorysClick={categorysClick}
+                    homeClick={homeClick}
+            />
+            <Product iphones={iphones} setIphones={setIphones} />*/}
+        </div>
+    );
+};
 
 export default App;

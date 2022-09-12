@@ -1,0 +1,82 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.img-card img{
+    width: 290px;
+    height: 300px;
+    border-radius: 5px;
+    border: solid 2px rgba(190, 45, 45, 0.97);
+   margin-left: 6px;
+    margin-top: 5px;
+}
+.img-card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+}
+.red{
+    background-color: rgba(190, 45, 45, 0.97);
+    height: 1px;
+    width: 265px;
+    margin-left: 20px;
+}
+.card-block{
+    margin: 20px;
+    display: inline-block;
+    width: 305px;
+    height: 528px;
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: rgba(25, 32, 44, 0.95) ;
+}
+
+.text-block{
+   display: flex;
+    background-color: rgba(190, 45, 45, 0.97);
+    border-radius: 10px;
+}
+.brand h2{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 90px;
+    color: white;
+}
+.brand h5{
+    margin-left: 100px;
+    color:  rgba(190, 45, 45, 0.97);
+    font-size: 14px;
+}
+.description p{
+    width: 250px;
+    height: 59px;
+    font-size: 10px;
+    margin-top: 10px;
+    color: white;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text-in-block{
+    width: 315px;
+    height: 60px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 3px;
+}
+.text-in-block:hover{
+    opacity: 0.6;
+}
+
+.star{
+    margin-left: 75px;
+}
